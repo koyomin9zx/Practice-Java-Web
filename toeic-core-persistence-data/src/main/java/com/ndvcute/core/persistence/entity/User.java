@@ -1,6 +1,8 @@
 package com.ndvcute.core.persistence.entity;
 
 import javax.persistence.*;
+import java.sql.Timestamp;
+import java.util.List;
 
 @Entity
 @Table(name="user")
@@ -19,7 +21,14 @@ public class User {
     private String fullName;
 
     @Column(name = "createdate")
-    private  String createDate;
+    private Timestamp createDate;
+
+    @ManyToOne
+    @JoinColumn(name="roleid")
+    private Role role;
+
+    @OneToMany(mappedBy = "userId",fetch = FetchType.LAZY)
+    private List<Comment> commentList;
 
     public Integer getUserId() {
         return userId;
@@ -53,11 +62,11 @@ public class User {
         this.fullName = fullName;
     }
 
-    public String getCreateDate() {
+    public Timestamp getCreateDate() {
         return createDate;
     }
 
-    public void setCreateDate(String createDate) {
+    public void setCreateDate(Timestamp createDate) {
         this.createDate = createDate;
     }
 }
