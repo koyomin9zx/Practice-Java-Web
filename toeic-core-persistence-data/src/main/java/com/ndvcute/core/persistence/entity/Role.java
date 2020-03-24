@@ -1,4 +1,4 @@
-package tk.ndvcute.core.persistence.entity;
+package com.ndvcute.core.persistence.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
