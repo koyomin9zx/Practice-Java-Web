@@ -6,3 +6,8 @@ create table user (
                       password varchar(255) null,
                       createdate timestamp null
 );
+
+create table role(
+                     roleid bigint not null primary key,
+                     name varchar(100) null
+);
