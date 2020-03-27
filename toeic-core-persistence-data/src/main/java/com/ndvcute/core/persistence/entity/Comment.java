@@ -12,11 +12,11 @@ public class Comment {
 
     @ManyToOne
     @JoinColumn(name = "userid")
-    private User userId;
+    private User user;
 
     @ManyToOne
     @JoinColumn(name = "listenguidelineid")
-    private ListenGuideline listenGuidelineId;
+    private ListenGuideline listenGuideline;
 
     @Column(name = "createddate")
     private Timestamp createdDate;
@@ -32,20 +32,20 @@ public class Comment {
         this.commentId = commentId;
     }
 
-    public User getUserId() {
-        return userId;
+    public User getUser() {
+        return user;
     }
 
-    public void setUserId(User userId) {
-        this.userId = userId;
+    public void setUser(User user) {
+        this.user = user;
     }
 
-    public ListenGuideline getListenGuidelineId() {
-        return listenGuidelineId;
+    public ListenGuideline getListenGuideline() {
+        return listenGuideline;
     }
 
-    public void setListenGuidelineId(ListenGuideline listenGuidelineId) {
-        this.listenGuidelineId = listenGuidelineId;
+    public void setListenGuideline(ListenGuideline listenGuideline) {
+        this.listenGuideline = listenGuideline;
     }
 
     public Timestamp getCreatedDate() {

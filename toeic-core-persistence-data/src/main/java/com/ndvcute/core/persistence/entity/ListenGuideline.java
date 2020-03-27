@@ -26,7 +26,7 @@ public class ListenGuideline {
     @Column(name = "content")
     private Timestamp modifiedDate;
 
-    @OneToMany(mappedBy = "listenGuidelineId", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "listenGuideline", fetch = FetchType.LAZY)
     private List<Comment> commentList;
 
     public Integer getListenGuidelineId() {

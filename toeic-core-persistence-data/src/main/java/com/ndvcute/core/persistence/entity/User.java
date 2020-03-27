@@ -27,7 +27,7 @@ public class User {
     @JoinColumn(name="roleid")
     private Role role;
 
-    @OneToMany(mappedBy = "userId",fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "user",fetch = FetchType.LAZY)
     private List<Comment> commentList;
 
     public Integer getUserId() {
