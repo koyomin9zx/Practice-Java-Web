@@ -6,7 +6,7 @@ import java.util.List;
 
 @Entity
 @Table(name="user")
-public class User {
+public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer userId;
@@ -25,10 +25,10 @@ public class User {
 
     @ManyToOne
     @JoinColumn(name="roleid")
-    private Role role;
+    private RoleEntity roleEntity;
 
-    @OneToMany(mappedBy = "user",fetch = FetchType.LAZY)
-    private List<Comment> commentList;
+    @OneToMany(mappedBy = "userEntity",fetch = FetchType.LAZY)
+    private List<CommentEntity> commentEntityList;
 
     public Integer getUserId() {
         return userId;

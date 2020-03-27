@@ -1,6 +1,8 @@
 package com.ndvcute.core.data.daoimpl;
 
 import com.ndvcute.core.data.dao.GenericDao;
+import org.hibernate.HibernateException;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import tk.ndvcute.core.common.utils.HibernateUtil;
@@ -25,8 +27,18 @@ public class AbstractDao<ID extends Serializable, T>implements GenericDao {
     public List findAll() {
         List<T> list= new ArrayList<T>();
         Transaction transaction=null;
-        transaction = getSession().beginTransaction();
-
-        return null;
+        try {
+            transaction = getSession().beginTransaction();
+            StringBuilder sql=new StringBuilder("from ");
+            sql.append(this.getPersistenceClassName());
+            Query query=this.getSession().createQuery(sql.toString());
+            list = query.list();
+            transaction.commit();
+        }catch (HibernateException e)
+        {
+            transaction.rollback();
+            throw e;
+        }
+        return list;
     }
 }
