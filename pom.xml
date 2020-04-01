@@ -16,6 +16,7 @@
         <module>toeic-core-service</module>
         <module>toeic-core-service-impl</module>
         <module>toeic-core-persistence-data</module>
+        <module>toeic-core-test</module>
     </modules>
     <groupId>com.ndvcute</groupId>
     <artifactId>WebToeic</artifactId>
@@ -23,7 +24,7 @@
     <properties>
         <servlet.api.version>3.1.0</servlet.api.version>
         <jsp.api.version>2.3.1</jsp.api.version>
-        <mysql.connector.version>5.1.31</mysql.connector.version>
+        <mysql.connector.version>8.0.19</mysql.connector.version>
         <hibernate.version>4.3.6.Final</hibernate.version>
     </properties>
     <dependencies>
