@@ -23,7 +23,7 @@ public class ListenGuidelineEntity {
     @Column(name = "createddate")
     private Timestamp createdDate;
 
-    @Column(name = "content")
+    @Column(name = "modifieddate")
     private Timestamp modifiedDate;
 
     @OneToMany(mappedBy = "listenGuidelineEntity", fetch = FetchType.LAZY)
