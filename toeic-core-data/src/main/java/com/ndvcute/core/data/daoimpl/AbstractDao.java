@@ -20,6 +20,7 @@ public class AbstractDao<ID extends Serializable, T>implements GenericDao<ID,T> 
     public String getPersistenceClassName(){
         return persistenceClass.getSimpleName();
     }
+
     public List<T> findAll() {
         List<T> list = new ArrayList<T>();
         Session session = HibernateUtil.getSessionFactory().openSession();
