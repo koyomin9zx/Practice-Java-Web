@@ -26,18 +26,6 @@
         </dependency>
         <dependency>
             <groupId>com.ndvcute</groupId>
-            <artifactId>toeic-core-dao</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.ndvcute</groupId>
-            <artifactId>toeic-core-dao-impl</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.ndvcute</groupId>
             <artifactId>toeic-core-dao-impl</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>test</scope>
