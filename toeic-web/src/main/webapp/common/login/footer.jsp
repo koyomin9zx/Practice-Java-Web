@@ -1,16 +1,35 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Nguyen Dinh Vinh
-  Date: 4/3/2020
-  Time: 1:51 PM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+<footer class="footer">
+    <div class="container">
+        <nav class="float-left">
+            <ul>
+                <li>
+                    <a href="https://www.creative-tim.com/">
+                        Creative Tim
+                    </a>
+                </li>
+                <li>
+                    <a href="https://creative-tim.com/presentation">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="http://blog.creative-tim.com/">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.creative-tim.com/license">
+                        Licenses
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="copyright float-right">
+            ©
+            <script>
+                document.write(new Date().getFullYear())
+            </script>2020, made with <i class="material-icons">favorite</i> by
+            <a href="https://www.creative-tim.com/" target="_blank">Creative Tim</a> for a better web.
+        </div>
+    </div>
+</footer>

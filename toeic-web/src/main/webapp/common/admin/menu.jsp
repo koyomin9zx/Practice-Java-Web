@@ -1,514 +1,299 @@
-<div id="sidebar" class="sidebar                  responsive" data-sidebar="true" data-sidebar-scroll="true" data-sidebar-hover="true">
-    <script type="text/javascript">
-        try{ace.settings.check('sidebar' , 'fixed')}catch(e){}
-    </script>
-
-    <div class="sidebar-shortcuts" id="sidebar-shortcuts">
-        <div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
-            <button class="btn btn-success">
-                <i class="ace-icon fa fa-signal"></i>
-            </button>
-
-            <button class="btn btn-info">
-                <i class="ace-icon fa fa-pencil"></i>
-            </button>
-
-            <button class="btn btn-warning">
-                <i class="ace-icon fa fa-users"></i>
-            </button>
-
-            <button class="btn btn-danger">
-                <i class="ace-icon fa fa-cogs"></i>
-            </button>
+<div class="logo">
+    <a href="#" class="simple-text logo-mini">
+        <i class="material-icons">favorite</i>
+    </a>
+    <a href="#" class="simple-text logo-normal">
+        WELCOME
+    </a>
+</div>
+<div class="sidebar-wrapper">
+    <div class="user">
+        <div class="photo">
+            <img src="<c:url value='/template/admin/assets/img/faces/avatar.jpg'/>"/>
         </div>
-
-        <div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
-            <span class="btn btn-success"></span>
-
-            <span class="btn btn-info"></span>
-
-            <span class="btn btn-warning"></span>
-
-            <span class="btn btn-danger"></span>
-        </div>
-    </div><!-- /.sidebar-shortcuts -->
-
-    <ul class="nav nav-list" style="top: 0px;">
-        <li class="active">
-            <a href="index.html">
-                <i class="menu-icon fa fa-tachometer"></i>
-                <span class="menu-text"> Dashboard </span>
+        <div class="user-info">
+            <a data-toggle="collapse" href="#collapseExample" class="username">
+              <span>
+                Tania Andrew
+                <b class="caret"></b>
+              </span>
             </a>
-
-            <b class="arrow"></b>
+            <div class="collapse" id="collapseExample">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="sidebar-mini"> MP </span>
+                            <span class="sidebar-normal"> My Profile </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="sidebar-mini"> EP </span>
+                            <span class="sidebar-normal"> Edit Profile </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="sidebar-mini"> LG </span>
+                            <span class="sidebar-normal"> Logout </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <ul class="nav">
+        <li class="nav-item active ">
+            <a class="nav-link" href="dashboard.html">
+                <i class="material-icons">dashboard</i>
+                <p> Dashboard </p>
+            </a>
         </li>
-
-        <li class="">
-            <a href="#" class="dropdown-toggle">
-                <i class="menu-icon fa fa-desktop"></i>
-                <span class="menu-text">
-								UI &amp; Elements
-							</span>
-
-                <b class="arrow fa fa-angle-down"></b>
+        <li class="nav-item ">
+            <a class="nav-link" data-toggle="collapse" href="#pagesExamples">
+                <i class="material-icons">image</i>
+                <p> Pages
+                    <b class="caret"></b>
+                </p>
             </a>
-
-            <b class="arrow"></b>
-
-            <ul class="submenu nav-hide" style="display: none;">
-                <li class="">
-                    <a href="#" class="dropdown-toggle">
-                        <i class="menu-icon fa fa-caret-right"></i>
-
-                        Layouts
-                        <b class="arrow fa fa-angle-down"></b>
-                    </a>
-
-                    <b class="arrow"></b>
-
-                    <ul class="submenu">
-                        <li class="">
-                            <a href="top-menu.html">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                Top Menu
-                            </a>
-
-                            <b class="arrow"></b>
-                        </li>
-
-                        <li class="">
-                            <a href="two-menu-1.html">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                Two Menus 1
-                            </a>
-
-                            <b class="arrow"></b>
-                        </li>
-
-                        <li class="">
-                            <a href="two-menu-2.html">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                Two Menus 2
-                            </a>
-
-                            <b class="arrow"></b>
-                        </li>
-
-                        <li class="">
-                            <a href="mobile-menu-1.html">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                Default Mobile Menu
-                            </a>
-
-                            <b class="arrow"></b>
-                        </li>
-
-                        <li class="">
-                            <a href="mobile-menu-2.html">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                Mobile Menu 2
-                            </a>
-
-                            <b class="arrow"></b>
-                        </li>
-
-                        <li class="">
-                            <a href="mobile-menu-3.html">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                Mobile Menu 3
-                            </a>
-
-                            <b class="arrow"></b>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="">
-                    <a href="typography.html">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        Typography
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-
-                <li class="">
-                    <a href="elements.html">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        Elements
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-
-                <li class="">
-                    <a href="buttons.html">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        Buttons &amp; Icons
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-
-                <li class="">
-                    <a href="content-slider.html">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        Content Sliders
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-
-                <li class="">
-                    <a href="treeview.html">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        Treeview
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-
-                <li class="">
-                    <a href="jquery-ui.html">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        jQuery UI
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-
-                <li class="">
-                    <a href="nestable-list.html">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        Nestable Lists
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-
-                <li class="">
-                    <a href="#" class="dropdown-toggle">
-                        <i class="menu-icon fa fa-caret-right"></i>
-
-                        Three Level Menu
-                        <b class="arrow fa fa-angle-down"></b>
-                    </a>
-
-                    <b class="arrow"></b>
-
-                    <ul class="submenu">
-                        <li class="">
-                            <a href="#">
-                                <i class="menu-icon fa fa-leaf green"></i>
-                                Item #1
-                            </a>
-
-                            <b class="arrow"></b>
-                        </li>
-
-                        <li class="">
-                            <a href="#" class="dropdown-toggle">
-                                <i class="menu-icon fa fa-pencil orange"></i>
-
-                                4th level
-                                <b class="arrow fa fa-angle-down"></b>
-                            </a>
-
-                            <b class="arrow"></b>
-
-                            <ul class="submenu">
-                                <li class="">
-                                    <a href="#">
-                                        <i class="menu-icon fa fa-plus purple"></i>
-                                        Add Product
+            <div class="collapse" id="pagesExamples">
+                <ul class="nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="pages/pricing.html">
+                            <span class="sidebar-mini"> P </span>
+                            <span class="sidebar-normal"> Pricing </span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="pages/rtl.html">
+                            <span class="sidebar-mini"> RS </span>
+                            <span class="sidebar-normal"> RTL Support </span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="pages/timeline.html">
+                            <span class="sidebar-mini"> T </span>
+                            <span class="sidebar-normal"> Timeline </span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="pages/login.html">
+                            <span class="sidebar-mini"> LP </span>
+                            <span class="sidebar-normal"> Login Page </span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="pages/register.html">
+                            <span class="sidebar-mini"> RP </span>
+                            <span class="sidebar-normal"> Register Page </span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="pages/lock.html">
+                            <span class="sidebar-mini"> LSP </span>
+                            <span class="sidebar-normal"> Lock Screen Page </span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="pages/user.html">
+                            <span class="sidebar-mini"> UP </span>
+                            <span class="sidebar-normal"> User Profile </span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="pages/error.html">
+                            <span class="sidebar-mini"> E </span>
+                            <span class="sidebar-normal"> Error Page </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link" data-toggle="collapse" href="#componentsExamples">
+                <i class="material-icons">apps</i>
+                <p> Components
+                    <b class="caret"></b>
+                </p>
+            </a>
+            <div class="collapse" id="componentsExamples">
+                <ul class="nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" data-toggle="collapse" href="#componentsCollapse">
+                            <span class="sidebar-mini"> MLT </span>
+                            <span class="sidebar-normal"> Multi Level Collapse
+                      <b class="caret"></b>
+                    </span>
+                        </a>
+                        <div class="collapse" id="componentsCollapse">
+                            <ul class="nav">
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#0">
+                                        <span class="sidebar-mini"> E </span>
+                                        <span class="sidebar-normal"> Example </span>
                                     </a>
-
-                                    <b class="arrow"></b>
-                                </li>
-
-                                <li class="">
-                                    <a href="#">
-                                        <i class="menu-icon fa fa-eye pink"></i>
-                                        View Products
-                                    </a>
-
-                                    <b class="arrow"></b>
                                 </li>
                             </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="components/buttons.html">
+                            <span class="sidebar-mini"> B </span>
+                            <span class="sidebar-normal"> Buttons </span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="components/grid.html">
+                            <span class="sidebar-mini"> GS </span>
+                            <span class="sidebar-normal"> Grid System </span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="components/panels.html">
+                            <span class="sidebar-mini"> P </span>
+                            <span class="sidebar-normal"> Panels </span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="components/sweet-alert.html">
+                            <span class="sidebar-mini"> SA </span>
+                            <span class="sidebar-normal"> Sweet Alert </span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="components/notifications.html">
+                            <span class="sidebar-mini"> N </span>
+                            <span class="sidebar-normal"> Notifications </span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="components/icons.html">
+                            <span class="sidebar-mini"> I </span>
+                            <span class="sidebar-normal"> Icons </span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="components/typography.html">
+                            <span class="sidebar-mini"> T </span>
+                            <span class="sidebar-normal"> Typography </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </li>
-
-        <li class="">
-            <a href="#" class="dropdown-toggle">
-                <i class="menu-icon fa fa-list"></i>
-                <span class="menu-text"> Tables </span>
-
-                <b class="arrow fa fa-angle-down"></b>
+        <li class="nav-item ">
+            <a class="nav-link" data-toggle="collapse" href="#formsExamples">
+                <i class="material-icons">content_paste</i>
+                <p> Forms
+                    <b class="caret"></b>
+                </p>
             </a>
-
-            <b class="arrow"></b>
-
-            <ul class="submenu">
-                <li class="">
-                    <a href="tables.html">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        Simple &amp; Dynamic
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-
-                <li class="">
-                    <a href="jqgrid.html">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        jqGrid plugin
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-            </ul>
+            <div class="collapse" id="formsExamples">
+                <ul class="nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="forms/regular.html">
+                            <span class="sidebar-mini"> RF </span>
+                            <span class="sidebar-normal"> Regular Forms </span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="forms/extended.html">
+                            <span class="sidebar-mini"> EF </span>
+                            <span class="sidebar-normal"> Extended Forms </span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="forms/validation.html">
+                            <span class="sidebar-mini"> VF </span>
+                            <span class="sidebar-normal"> Validation Forms </span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="forms/wizard.html">
+                            <span class="sidebar-mini"> W </span>
+                            <span class="sidebar-normal"> Wizard </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </li>
-
-        <li class="">
-            <a href="#" class="dropdown-toggle">
-                <i class="menu-icon fa fa-pencil-square-o"></i>
-                <span class="menu-text"> Forms </span>
-
-                <b class="arrow fa fa-angle-down"></b>
+        <li class="nav-item ">
+            <a class="nav-link" data-toggle="collapse" href="#tablesExamples">
+                <i class="material-icons">grid_on</i>
+                <p> Tables
+                    <b class="caret"></b>
+                </p>
             </a>
-
-            <b class="arrow"></b>
-
-            <ul class="submenu">
-                <li class="">
-                    <a href="form-elements.html">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        Form Elements
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-
-                <li class="">
-                    <a href="form-elements-2.html">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        Form Elements 2
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-
-                <li class="">
-                    <a href="form-wizard.html">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        Wizard &amp; Validation
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-
-                <li class="">
-                    <a href="wysiwyg.html">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        Wysiwyg &amp; Markdown
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-
-                <li class="">
-                    <a href="dropzone.html">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        Dropzone File Upload
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-            </ul>
+            <div class="collapse" id="tablesExamples">
+                <ul class="nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="tables/regular.html">
+                            <span class="sidebar-mini"> RT </span>
+                            <span class="sidebar-normal"> Regular Tables </span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="tables/extended.html">
+                            <span class="sidebar-mini"> ET </span>
+                            <span class="sidebar-normal"> Extended Tables </span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="tables/datatables.net.html">
+                            <span class="sidebar-mini"> DT </span>
+                            <span class="sidebar-normal"> DataTables.net </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </li>
-
-        <li class="">
-            <a href="widgets.html">
-                <i class="menu-icon fa fa-list-alt"></i>
-                <span class="menu-text"> Widgets </span>
+        <li class="nav-item ">
+            <a class="nav-link" data-toggle="collapse" href="#mapsExamples">
+                <i class="material-icons">place</i>
+                <p> Maps
+                    <b class="caret"></b>
+                </p>
             </a>
-
-            <b class="arrow"></b>
+            <div class="collapse" id="mapsExamples">
+                <ul class="nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="maps/google.html">
+                            <span class="sidebar-mini"> GM </span>
+                            <span class="sidebar-normal"> Google Maps </span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="maps/fullscreen.html">
+                            <span class="sidebar-mini"> FSM </span>
+                            <span class="sidebar-normal"> Full Screen Map </span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="maps/vector.html">
+                            <span class="sidebar-mini"> VM </span>
+                            <span class="sidebar-normal"> Vector Map </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </li>
-
-        <li class="">
-            <a href="calendar.html">
-                <i class="menu-icon fa fa-calendar"></i>
-
-                <span class="menu-text">
-								Calendar
-
-								<span class="badge badge-transparent tooltip-error" title="" data-original-title="2 Important Events">
-									<i class="ace-icon fa fa-exclamation-triangle red bigger-130"></i>
-								</span>
-							</span>
+        <li class="nav-item ">
+            <a class="nav-link" href="widgets.html">
+                <i class="material-icons">widgets</i>
+                <p> Widgets </p>
             </a>
-
-            <b class="arrow"></b>
         </li>
-
-        <li class="">
-            <a href="gallery.html">
-                <i class="menu-icon fa fa-picture-o"></i>
-                <span class="menu-text"> Gallery </span>
+        <li class="nav-item ">
+            <a class="nav-link" href="charts.html">
+                <i class="material-icons">timeline</i>
+                <p> Charts </p>
             </a>
-
-            <b class="arrow"></b>
         </li>
-
-        <li class="">
-            <a href="#" class="dropdown-toggle">
-                <i class="menu-icon fa fa-tag"></i>
-                <span class="menu-text"> More Pages </span>
-
-                <b class="arrow fa fa-angle-down"></b>
+        <li class="nav-item ">
+            <a class="nav-link" href="calendar.html">
+                <i class="material-icons">date_range</i>
+                <p> Calendar </p>
             </a>
-
-            <b class="arrow"></b>
-
-            <ul class="submenu">
-                <li class="">
-                    <a href="profile.html">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        User Profile
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-
-                <li class="">
-                    <a href="inbox.html">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        Inbox
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-
-                <li class="">
-                    <a href="pricing.html">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        Pricing Tables
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-
-                <li class="">
-                    <a href="invoice.html">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        Invoice
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-
-                <li class="">
-                    <a href="timeline.html">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        Timeline
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-
-                <li class="">
-                    <a href="email.html">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        Email Templates
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-
-                <li class="">
-                    <a href="login.html">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        Login &amp; Register
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-            </ul>
         </li>
-
-        <li class="">
-            <a href="#" class="dropdown-toggle">
-                <i class="menu-icon fa fa-file-o"></i>
-
-                <span class="menu-text">
-								Other Pages
-
-								<span class="badge badge-primary">5</span>
-							</span>
-
-                <b class="arrow fa fa-angle-down"></b>
-            </a>
-
-            <b class="arrow"></b>
-
-            <ul class="submenu">
-                <li class="">
-                    <a href="faq.html">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        FAQ
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-
-                <li class="">
-                    <a href="error-404.html">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        Error 404
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-
-                <li class="">
-                    <a href="error-500.html">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        Error 500
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-
-                <li class="">
-                    <a href="grid.html">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        Grid
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-
-                <li class="">
-                    <a href="blank.html">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        Blank Page
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-            </ul>
-        </li>
-    </ul><!-- /.nav-list -->
-
-    <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
-        <i class="ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
-    </div>
-
-    <script type="text/javascript">
-        try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
-    </script>
+    </ul>
 </div>

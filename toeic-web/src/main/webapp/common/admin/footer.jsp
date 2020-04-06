@@ -1,25 +1,36 @@
-<div class="footer">
-	<div class="footer-inner">
-		<div class="footer-content">
-						<span class="bigger-120">
-							<span class="blue bolder">Ace</span>
-							Application © 2013-2014
-						</span>
-
-			&nbsp; &nbsp;
-			<span class="action-buttons">
-							<a href="#">
-								<i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
-							</a>
-
-							<a href="#">
-								<i class="ace-icon fa fa-facebook-square text-primary bigger-150"></i>
-							</a>
-
-							<a href="#">
-								<i class="ace-icon fa fa-rss-square orange bigger-150"></i>
-							</a>
-						</span>
+<footer class="footer">
+	<div class="container-fluid">
+		<nav class="float-left">
+			<ul>
+				<li>
+					<a href="https://www.creative-tim.com/">
+						Creative Tim
+					</a>
+				</li>
+				<li>
+					<a href="https://creative-tim.com/presentation">
+						About Us
+					</a>
+				</li>
+				<li>
+					<a href="http://blog.creative-tim.com/">
+						Blog
+					</a>
+				</li>
+				<li>
+					<a href="https://www.creative-tim.com/license">
+						Licenses
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="copyright float-right">
+			©
+			<script>
+				document.write(new Date().getFullYear())
+			</script>2020
+			, made with <i class="material-icons">favorite</i> by
+			<a href="https://www.creative-tim.com/" target="_blank">Creative Tim</a> for a better web.
 		</div>
 	</div>
-</div>
+</footer>
