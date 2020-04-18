@@ -3,22 +3,22 @@
         <nav class="float-left">
             <ul>
                 <li>
-                    <a href="https://www.creative-tim.com/">
-                        Creative Tim
+                    <a href="https://ndvcute.wordpress.com/">
+                        Course genius
                     </a>
                 </li>
                 <li>
-                    <a href="https://creative-tim.com/presentation">
+                    <a href="https://ndvcute.wordpress.com/">
                         About Us
                     </a>
                 </li>
                 <li>
-                    <a href="http://blog.creative-tim.com/">
+                    <a href="https://ndvcute.wordpress.com/">
                         Blog
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.creative-tim.com/license">
+                    <a href="https://ndvcute.wordpress.com/">
                         Licenses
                     </a>
                 </li>
@@ -28,8 +28,8 @@
             ©
             <script>
                 document.write(new Date().getFullYear())
-            </script>2020, made with <i class="material-icons">favorite</i> by
-            <a href="https://www.creative-tim.com/" target="_blank">Creative Tim</a> for a better web.
+            </script>2020, made by <i class="material-icons">favorite</i> by
+            <a href="https://ndvcute.wordpress.com/" target="_blank">KoyominZ</a>
         </div>
     </div>
 </footer>

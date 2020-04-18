@@ -23,6 +23,9 @@ public class UserEntity {
     @Column(name = "createdate")
     private Timestamp createDate;
 
+    @Column(name = "email")
+    private String email;
+
     @ManyToOne
     @JoinColumn(name="roleid")
     private RoleEntity roleEntity;
@@ -66,7 +69,24 @@ public class UserEntity {
         return createDate;
     }
 
+    public RoleEntity getRoleEntity() {
+        return roleEntity;
+    }
+
+    public void setRoleEntity(RoleEntity roleEntity) {
+        this.roleEntity = roleEntity;
+    }
+
     public void setCreateDate(Timestamp createDate) {
         this.createDate = createDate;
     }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
 }
